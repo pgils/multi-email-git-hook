@@ -7,8 +7,8 @@ all:
 	@echo "Nothing to build"
 
 install:
-	@install -v -d "$(TEMPLATE_DIR)"
-	@install -v -m 0755 "pre-commit.pl" "$(TEMPLATE_DIR)/pre-commit"
+	@install -v -d "$(TEMPLATE_DIR)/hooks"
+	@install -v -m 0755 "pre-commit.pl" "$(TEMPLATE_DIR)/hooks/pre-commit"
 	@if ${GIT_SET_TEMPLATE} >/dev/null; then \
 		echo "Attention: global init.templateDir already set:"; \
 		${GIT_SET_TEMPLATE}; \
