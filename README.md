@@ -111,5 +111,5 @@ G-->|yes|H[write matched email to local config]-->Z
 
 ## References
 - https://git-scm.com/docs/githooks
-- https://gitlab.com/DrVanScott/git-clone-init
-- https://gist.gitlab.com/dreness/2de62e01d2053f9440eb
+- https://github.com/DrVanScott/git-clone-init
+- https://gist.github.com/dreness/2de62e01d2053f9440eb
