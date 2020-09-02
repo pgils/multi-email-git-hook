@@ -57,6 +57,8 @@ $ cat ~/.gitconfig
 
 Commits made to repositories with an origin that matches "gitlab.com:company1" will now use the e-mail address "me@company1.com".
 
+A remote named 'origin' is used as the preferred value.
+
 [gitconfig]:https://git-scm.com/docs/git-config#FILES
 
 ## Usage
