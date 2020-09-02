@@ -41,17 +41,20 @@ $ git config --global multi-email.company1.match gitlab.com:company1
 $ git config --global multi-email.company1.email me@company1.com
 ```
 And another:
+
+The 'match' value can be a regular expression. To match both github.com and gitlab.com for instance:
 ```
-$ git config --global multi-email.company2.match gitlab.com:company2
+$ git config --global multi-email.company2.match git\\w+.com:company2
 $ git config --global multi-email.company2.email me@company2.io
 ```
+*note: backslashes need to be escaped.*
 ```
 $ cat ~/.gitconfig
 [multi-email "company1"]
 	match = gitlab.com:company1
 	email = me@company1.com
 [multi-email "company2"]
-	match = gitlab.com:company2
+	match = git\\w+.com:company2
 	email = me@company2.io
 ```
 
