@@ -11,8 +11,8 @@ Make sure you have these packages installed:
 #### Manual
 Install `pre-commit.pl` to the [`init.templateDir`][template-dir] as `pre-commit`. e.g:
 ```
-$ mkdir ~/.git-template-dir
-$ cp pre-commit.pl ~/.git-template-dir/pre-commit
+$ mkdir ~/.git-template-dir/hooks
+$ cp pre-commit.pl ~/.git-template-dir/hooks/pre-commit
 $ git config --global init.templateDir ~/.git-template-dir
 ```
 
