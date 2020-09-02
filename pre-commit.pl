@@ -53,6 +53,7 @@ foreach my $line( @remotes_list ) {
     if ($line =~ m/^(\w+)\s+(.+)$/x) {
         if( $1 eq 'origin' ) {
             match_url($1,$2);
+            next;
         }
         push @remotes, $2;
     }
